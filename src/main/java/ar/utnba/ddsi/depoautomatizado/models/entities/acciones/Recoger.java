@@ -1,4 +1,10 @@
 package ar.utnba.ddsi.depoautomatizado.models.entities.acciones;
 
-public class Recoger {
+import ar.utnba.ddsi.depoautomatizado.models.entities.robots.Robot;
+
+public class Recoger implements Accion {
+    @Override
+    public void ejecutar(Robot robot) {
+        robot.recoger();
+    }
 }
